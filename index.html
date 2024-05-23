@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>Instagram</title>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand small" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-2">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create a new post
+            </button>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end text-end" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-grid-3" data-bs-toggle="pill" data-bs-target="#pills-grid3"
+        type="button" role="tab">
+        <i class="bi bi-grid-3x3"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-grid-1" data-bs-toggle="pill" data-bs-target="#pills-grid1" type="button"
+        role="tab">
+        <i class="bi bi-app"></i></button>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-grid3" role="tabpanel" tabindex="0">
+      <!-- Aqui va el contenido del grid de 3x3 de las fotos, es decir, lo que me has enviado de los gatos -->
+
+      <div>
+        <div class="row d-flex justify-content-center">
+          <img src="https://i.pinimg.com/564x/a9/04/af/a904affecd0e9e7415d0f82ed30782aa.jpg" class="col-3">
+          <img src="https://i.pinimg.com/564x/da/d2/9d/dad29d30e0a5caedd1d453bf56335089.jpg" class="col-3 mx-2">
+          <img src="https://i.pinimg.com/564x/45/5d/7c/455d7c71d93b8f1173838f63a2c16489.jpg" class="col-3">
+        </div>
+        <div class="row my-3 d-flex justify-content-center ">
+          <img src="https://i.pinimg.com/564x/a0/ce/23/a0ce2395f88776dd55ce2f0848632919.jpg" class="col-3">
+          <img src="https://i.pinimg.com/564x/a6/6a/18/a66a18a2b748015aa80bd6af9f3de469.jpg" class="col-3 mx-2">
+          <img src="https://i.pinimg.com/564x/80/9f/84/809f84f9fa7fb65bd225610e15cf822b.jpg" class="col-3">
+        </div>
+        <div class="row d-flex justify-content-center">
+          <img src="https://i.pinimg.com/564x/01/cf/50/01cf50adc792947aa2d05ffa2a049cbc.jpg" class="col-3">
+          <img src="https://i.pinimg.com/564x/f7/33/46/f73346e8aaf923c2fa915ad281ce9753.jpg" class="col-3 mx-2">
+          <img src="https://i.pinimg.com/564x/4c/22/e3/4c22e344aef692811e2a3cc017bf45bf.jpg" class="col-3">
+        </div>
+      </div>
+
+    </div>
+    <div class="tab-pane fade d-block" id="pills-grid1" role="tabpanel">
+      <div class="card ms-auto me-auto col-4  mt-2">
+        <div class="card-header p-2 d-flex justify-content-between">
+          <span class="fs-4"> Gato Luffy</span><span class="fs-6">1/12</span>
+        </div>
+        <img src="https://i.pinimg.com/564x/a9/04/af/a904affecd0e9e7415d0f82ed30782aa.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <p class="card-text">Este es Gato Luffy</p>
+        </div>
+      </div>
+      <div class="card ms-auto me-auto col-4 mt-2">
+        <div class="card-header p-2 d-flex justify-content-between">
+          <span class="fs-4"> Gato Zoro</span><span class="fs-6">2/12</span>
+        </div>
+        <img src="https://i.pinimg.com/564x/da/d2/9d/dad29d30e0a5caedd1d453bf56335089.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <p class="card-text">Este es Gato Zoro</p>
+        </div>
+      </div>
+      <div class="card ms-auto me-auto col-4 mt-2">
+        <div class="card-header p-2 d-flex justify-content-between">
+          <span class="fs-4"> Gato Chopper</span><span class="fs-6">3/12</span>
+        </div>
+        <img src="https://i.pinimg.com/564x/45/5d/7c/455d7c71d93b8f1173838f63a2c16489.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <p class="card-text">Este es Gato Chopper</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
